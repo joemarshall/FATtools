@@ -16,4 +16,7 @@ def main():
         subpar.set_defaults(func=mod.call)
     
     args = par.parse_args()
-    args.func(args)
+    if hasattr(args,"func"):
+        args.func(args)
+    else:
+        par.print_help()

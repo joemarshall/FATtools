@@ -22,7 +22,7 @@ dynamic=["version"]
 version = {attr = "FATtools.version.__version__"}
 
 [tool.setuptools]
-packages = ["FATtools"]
+packages = ["FATtools","FATTools.scripts"]
 
 [project.scripts]
 fattools = "FATtools.scripts.main:main"
